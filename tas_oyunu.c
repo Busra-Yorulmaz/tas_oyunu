@@ -1,5 +1,3 @@
-/* BİLGİSAYAR PROGRAMLAMAYA GİRİŞ DÖNEM PROJESİ TAŞ OYUNU */
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <conio.h>
