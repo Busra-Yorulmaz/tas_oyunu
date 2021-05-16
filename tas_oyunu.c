@@ -1,5 +1,4 @@
-/* BÝLGÝSAYAR PROGRAMLAMAYA GÝRÝÞ DÖNEM PROJESÝ TAÞ OYUNU 
-		BÜÞRA YORULMAZ -- 18110131018	*/
+/* BÄ°LGÄ°SAYAR PROGRAMLAMAYA GÄ°RÄ°Åž DÃ–NEM PROJESÄ° TAÅž OYUNU */
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -7,13 +6,13 @@
 int main(){
 	srand(time(0));
 	printf("OYUNA BASLANGIC TASLARI\n");
-	//birinci oyuncu taþlarý
+	//birinci oyuncu taÃ¾larÃ½
 	int i;
     int j;
     printf("1.OYUNCU TASLARI\n");
 	int oyuncu1[2][20]={ 
 	                   {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1}, //mavi1
-	                   {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1}, //kýrmýzý1
+	                   {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1}, //kÃ½rmÃ½zÃ½1
 					};
    	for(i=0;i<2;i++){
    		if(i==0) printf("M: ");
@@ -24,13 +23,13 @@ int main(){
 		printf("\n");
    	}
   
-	//ikinci oyuncu taþlarý
+	//ikinci oyuncu taÃ¾larÃ½
    	int k;
    	int l;
    	printf("2.OYUNCU TASLARI\n");
    		int oyuncu2[2][20]={ 
 	                   {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1}, //mavi2
-	                   {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1}, //kýrmýzý2
+	                   {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1}, //kÃ½rmÃ½zÃ½2
 					};
    	for(k=0;k<2;k++){
    			if(k==0) printf("M: ");
@@ -40,11 +39,11 @@ int main(){
 		}printf("\n");
    	}
    	
-    	int oyuncu = rand()%2; // oyuna baþlayacak oyuncu random seçilir.
-		int renk   = rand()%2;	//Baþlangýçta verilecek taþýn mavi veya kýrmýzý olmasýna rastgele karar verilir.
-		int sayi   = 1+(rand()%10); //1-10 arasý toplardan hangisinin verileceði rastgele seçilir
-		int sec    = rand()%2; // iki uygun taþ da varsa oynanacak taþ random seçilir.
-		int adim   = 1;  // hamle sayýsýný gösterir.
+    	int oyuncu = rand()%2; // oyuna baÅŸlayacak oyuncu random seÃ§ilir.
+		int renk   = rand()%2;	//BaÅŸlangÄ±Ã§ta verilecek taÃ¾Ã½n mavi veya kÄ±rmÄ±zÄ± olmasÄ±na rastgele karar verilir.
+		int sayi   = 1+(rand()%10); //1-10 arasÄ± toplardan hangisinin verileceÃ°i rastgele seÃ§ilir
+		int sec    = rand()%2; // iki uygun taÅŸ da varsa oynanacak taÅŸ random seÃ§ilir.
+		int adim   = 1;  // hamle sayisini gÃ¶sterir.
 		
 		printf("\n\n--Oyun Basliyor--\n");
 
@@ -54,7 +53,7 @@ int main(){
 	    printf("Adim: %d\n", adim);
 
 	while(1==1){
-		// 1. oyuncu için tüm koþullar 
+		// 1. oyuncu iÃ§in tÃ¼m koÃ¾ullar 
 		if(oyuncu==0){
 			if((oyuncu2[renk ==0?1:0][sayi-5]==!0)&&(oyuncu1[renk][sayi*2-1]==!0)&&(sayi-5>0)&&(sayi*2-1<20)){
 				if((sec==1)&&(sayi*2<20)){
@@ -64,7 +63,7 @@ int main(){
 					sayi=sayi*2;
 					adim++;
 				}
-				else{//sec==0 için
+				else{//sec==0 iÃ§in
 					oyuncu1[renk][sayi-1]=0;
 					oyuncu2[renk][sayi-1]=2;
 					oyuncu=1;
@@ -95,8 +94,8 @@ int main(){
 		}
 		}
 		
-		// 2. oyuncu için tüm koþullar 
-		else{//oyuncu==1  ise 2. oyuncu oyuna baþlar 
+		// 2. oyuncu iÃ§in tÃ¼m koÃ¾ullar 
+		else{//oyuncu==1  ise 2. oyuncu oyuna baÃ¾lar 
 			if((oyuncu1[renk ==0?1:0][sayi-5]==!0) && (oyuncu2[renk][sayi*2-1]==!0) && (sayi-5>0)&&(sayi*2-1<20) )	{
 				if(sec==1){
 					oyuncu2[renk][sayi-1]=0;
@@ -136,7 +135,7 @@ int main(){
 			}
 		}	
 	
-		// HER ADIMDA TAÞLAR VE ADIMLAR EKRANA BASTIRILIYOR
+		// HER ADIMDA TAÅžLAR VE ADIMLAR EKRANA BASTIRILIYOR
 		printf("\n1.OYUNCU TAHTASI\n"); 
 	   	for(i=0;i<2;i++){
  			if(i ==0)printf("M: ");	
