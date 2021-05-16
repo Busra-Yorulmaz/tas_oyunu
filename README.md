@@ -14,7 +14,7 @@ bulunmaktadır.
    Aksi halde şartları sağlayan taşı diğer oyuncuya verir.
 - Oyuncunun elinde kurallara uygun verebileceği taş kalmadığında oyun sonlanır ve taş 
 veremeyen oyuncu oyunu kaybeder.
-extralar;
+Extralar;
 - her 2 oyuncu için de birer tahta vardır.
 - Her hamle sonrasında oyun tahtalarının güncel halini ve hangi taşın verildiği ekrana bastırmalıyor.
 - Oyun sonlandığında hangi oyuncunun kazandığını ve kaç hamle yapıldığı ekrana yazdırılır.
