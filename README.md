@@ -16,5 +16,5 @@ bulunmaktadır.
 veremeyen oyuncu oyunu kaybeder.
 Extralar;
 - her 2 oyuncu için de birer tahta vardır.
-- Her hamle sonrasında oyun tahtalarının güncel halini ve hangi taşın verildiği ekrana bastırmalıyor.
+- Her hamle sonrasında oyun tahtalarının güncel halini ve hangi taşın verildiği ekrana bastırılıyor.
 - Oyun sonlandığında hangi oyuncunun kazandığını ve kaç hamle yapıldığı ekrana yazdırılır.
