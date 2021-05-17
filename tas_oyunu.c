@@ -4,7 +4,7 @@
 int main(){
 	srand(time(0));
 	printf("OYUNA BASLANGIC TASLARI\n");
-	//birinci oyuncu taþlarý
+	//birinci oyuncu taşları
 	int i;
     int j;
     printf("1.OYUNCU TASLARI\n");
@@ -21,13 +21,13 @@ int main(){
 		printf("\n");
    	}
   
-	//ikinci oyuncu taþlarý
+	//ikinci oyuncu taşları
    	int k;
    	int l;
    	printf("2.OYUNCU TASLARI\n");
    		int oyuncu2[2][20]={ 
 	                   {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1}, //mavi2
-	                   {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1}, //kýrmýzý2
+	                   {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1}, //kırmızı2
 					};
    	for(k=0;k<2;k++){
    			if(k==0) printf("M: ");
